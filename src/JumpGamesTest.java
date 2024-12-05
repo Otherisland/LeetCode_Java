@@ -2,8 +2,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 
-
-
 public class JumpGamesTest {
 
     static class Solution {
@@ -12,11 +10,19 @@ public class JumpGamesTest {
             int len=nums.length;
             //如果就一步或者没有，那直接成功
             if(len<2) return true;
-            //储存每格的位置
+            //前n-1个元素能够调到的最远距离
+            int distance=0;
+            //ps:distance是改变的，在i的判断条件中，distance可变
+            for(int i=0;i<=distance;i++){
+                //第i个元素能够调到的最远距离
+                int temp=i+nums[i];
+                distance=Math.max(distance,temp);
+                //如果最远距离已经大于或等于最后一个元素的下表，则说明能跳过去，退出，减少循环
+                if(distance>=len-1)return true;
+            }
+            //最远距离distance不再改变，且没有到末尾元素
             return false;
         }
-
-
     }
 
     // 输出输入信息
