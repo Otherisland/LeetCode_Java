@@ -73,7 +73,7 @@ public class Main {
         //45. Jump Games II
         JumpGamesIITest ex_45=new JumpGamesIITest();
         //274. H-Index
-        //H_Index ex274=new H_Index();
+        hIndexTest ex274=new hIndexTest();
         //380. Insert Delete GetRandom O(1)
 
         //238. Product of Array Except Self
