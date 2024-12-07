@@ -20,8 +20,9 @@ public class InsertDeleteGetRandomO1Test {
 
         //插入数据
         public boolean insert(int val) {
+            //已经存在该元素，返回false
             if (dict.containsKey(val)) return false;
-
+            //对应位置插入元素
             dict.put(val, list.size());
             list.add(list.size(), val);
             return true;
@@ -29,14 +30,15 @@ public class InsertDeleteGetRandomO1Test {
 
         //删除数据
         public boolean remove(int val) {
+            //不存在该元素
             if (! dict.containsKey(val)) return false;
-
-            // move the last element to the place idx of the element to delete
+            //删除保持O(1),所以要将最后一个元素放在移除元素的位置
+            //复制过去
             int lastElement = list.get(list.size() - 1);
             int idx = dict.get(val);
             list.set(idx, lastElement);
             dict.put(lastElement, idx);
-            // delete the last element
+            //删除最后的元素
             list.remove(list.size() - 1);
             dict.remove(val);
             return true;
