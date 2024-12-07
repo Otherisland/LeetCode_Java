@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
+import java.lang.Integer;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class InsertDeleteGetRandomO1Test {
@@ -14,8 +14,8 @@ public class InsertDeleteGetRandomO1Test {
 
         //初始化数据
         public RandomizedSet() {
-            dict = new HashMap();
-            list = new ArrayList();
+            dict = new HashMap<>();
+            list = new ArrayList<>();
         }
 
         //插入数据
