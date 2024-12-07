@@ -77,29 +77,29 @@ public class Main {
         //380. Insert Delete GetRandom O(1)
         InsertDeleteGetRandomO1Test ex_380=new InsertDeleteGetRandomO1Test();
         //238. Product of Array Except Self
-
+        ProductOfArrayExceptSelfTest ex_238=new ProductOfArrayExceptSelfTest();
         //134. Gas Station
-
+        GasStationTest ex_134=new GasStationTest();
         //135. Candy
-
+        CandyTest ex_135=new CandyTest();
         //42. Trapping Rain Water
-
+        TrappingRainWaterTest ex_42=new TrappingRainWaterTest();
         //13. Roman to Integer
-
+        RomanToIntegerTest ex_136=new RomanToIntegerTest();
         //12. Integer to Roman
-
+        IntegerToRomanTest ex_12=new IntegerToRomanTest();
         //58. Length of Last Word
-
+        LengthOfLastWordTest ex_58=new LengthOfLastWordTest();
         //14. Longest Common Prefix
-
+        LongestCommonPrefixTest ex_149=new LongestCommonPrefixTest();
         //151. Reverse Words in a String
-
+        ReverseWordsInAStringTest ex_151=new ReverseWordsInAStringTest();
         //6. Zigzag Conversion
-
+        ZigzagConversionTest ex_6=new ZigzagConversionTest();
         //28. Find the Index of the First Occurrence in a String
-
+        FindTheIndexOfTheFirstOccurrenceInAStringTest ex_28=new FindTheIndexOfTheFirstOccurrenceInAStringTest();
         //68. Text Justification
-
+        TextJustificationTest ex_68=new TextJustificationTest();
 
     }
     //双指针
