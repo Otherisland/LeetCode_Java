@@ -75,7 +75,7 @@ public class Main {
         //274. H-Index
         hIndexTest ex274=new hIndexTest();
         //380. Insert Delete GetRandom O(1)
-
+        InsertDeleteGetRandomO1Test ex_380=new InsertDeleteGetRandomO1Test();
         //238. Product of Array Except Self
 
         //134. Gas Station
