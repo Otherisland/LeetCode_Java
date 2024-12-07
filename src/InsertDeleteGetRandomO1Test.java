@@ -46,6 +46,7 @@ public class InsertDeleteGetRandomO1Test {
 
         //随机获得一个数据
         public int getRandom() {
+            //随机产生某个范围内的整数
             return list.get(rand.nextInt(list.size()));
         }
         //是否包含对应元素
