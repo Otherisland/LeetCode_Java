@@ -103,7 +103,10 @@ public class Main {
 
     }
     //双指针
-    static class TwoPointers{ }
+    static class TwoPointers{
+        //125. Valid Palindrome
+        ValidPalindromeTest ex_125=new ValidPalindromeTest();
+    }
     //滑动窗口
     static class SlindingWindow{ }
     //矩阵
