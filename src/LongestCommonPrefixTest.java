@@ -25,6 +25,20 @@ public class LongestCommonPrefixTest {
             return prefix;
         }
     }
+    // 输出输入信息
+    public void printInput(String[] s) {
+        System.out.println("输入");
+        System.out.println("s=");
+        System.out.println("strs = " + String.join(",", s));
+    }
+
+    // 输出结果和预期结果
+    public void printOutput(String result, String expected) {
+        System.out.println("输出");
+        System.out.println(result);
+        System.out.println("预期结果");
+        System.out.println(expected);
+    }
     // 测试用例1：有公共前缀
     @Test
     public void testCase1() {
@@ -47,16 +61,12 @@ public class LongestCommonPrefixTest {
     public void testCase2() {
         Solution solution = new Solution();
         String[] strs = {"dog", "racecar", "car"};
+        String expected="";
 
-        System.out.println("输入");
-        System.out.println("strs = " + String.join(",", strs));
-
+        printInput(strs);
         String result = solution.longestCommonPrefix(strs);
-
-        System.out.println("输出");
-        System.out.println(result);  // ""
-
-        assertEquals("", result); // 预期结果是 ""
+        printOutput(result, strs[0]);
+        assertEquals(expected, result); // 预期结果是 ""
     }
 
     // 测试用例3：只有一个单词
@@ -64,16 +74,12 @@ public class LongestCommonPrefixTest {
     public void testCase3() {
         Solution solution = new Solution();
         String[] strs = {"apple"};
+        String expected="apple";
 
-        System.out.println("输入");
-        System.out.println("strs = " + String.join(",", strs));
-
+        printInput(strs);
         String result = solution.longestCommonPrefix(strs);
-
-        System.out.println("输出");
-        System.out.println(result);  // "apple"
-
-        assertEquals("apple", result); // 预期结果是 "apple"
+        printOutput(result, strs[0]);
+        assertEquals(expected, result); // 预期结果是 ""
     }
 
     // 测试用例4：所有单词都相同
@@ -81,16 +87,12 @@ public class LongestCommonPrefixTest {
     public void testCase4() {
         Solution solution = new Solution();
         String[] strs = {"test", "test", "test"};
+        String expected="test";
 
-        System.out.println("输入");
-        System.out.println("strs = " + String.join(",", strs));
-
+        printInput(strs);
         String result = solution.longestCommonPrefix(strs);
-
-        System.out.println("输出");
-        System.out.println(result);  // "test"
-
-        assertEquals("test", result); // 预期结果是 "test"
+        printOutput(result, strs[0]);
+        assertEquals(expected, result); // 预期结果是 ""
     }
 
     // 测试用例5：字符串中含有空字符串
@@ -98,16 +100,12 @@ public class LongestCommonPrefixTest {
     public void testCase5() {
         Solution solution = new Solution();
         String[] strs = {"", "b", "c"};
+        String expected="";
 
-        System.out.println("输入");
-        System.out.println("strs = " + String.join(",", strs));
-
+        printInput(strs);
         String result = solution.longestCommonPrefix(strs);
-
-        System.out.println("输出");
-        System.out.println(result);  // ""
-
-        assertEquals("", result); // 预期结果是 ""
+        printOutput(result, strs[0]);
+        assertEquals(expected, result); // 预期结果是 ""
     }
 
     // 测试用例6：数组只有一个字符串且为空
@@ -115,15 +113,11 @@ public class LongestCommonPrefixTest {
     public void testCase6() {
         Solution solution = new Solution();
         String[] strs = {""};
+        String expected="";
 
-        System.out.println("输入");
-        System.out.println("strs = " + String.join(",", strs));
-
+        printInput(strs);
         String result = solution.longestCommonPrefix(strs);
-
-        System.out.println("输出");
-        System.out.println(result);  // ""
-
-        assertEquals("", result); // 预期结果是 ""
+        printOutput(result, strs[0]);
+        assertEquals(expected, result); // 预期结果是 ""
     }
 }
