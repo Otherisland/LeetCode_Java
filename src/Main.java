@@ -106,9 +106,26 @@ public class Main {
     static class TwoPointers{
         //125. Valid Palindrome
         ValidPalindromeTest ex_125=new ValidPalindromeTest();
+        //392. Is Subsequence
+        IsSubsequenceTest ex_392=new IsSubsequenceTest();
+        //167. Two Sums II - Input Array Is Sorted
+        TwoSumsIIInputArraysSortedTest ex_167=new TwoSumsIIInputArraysSortedTest();
+        //11. Container With Most Water
+        ContainerWithMostWaterTest ex_11=new ContainerWithMostWaterTest();
+        //15. 3Sum
+        Sum3SumTest ex_15=new Sum3SumTest();
     }
     //滑动窗口
-    static class SlindingWindow{ }
+    static class SlindingWindow{
+        //209. Minimum Size Subarray Sum
+        MinimumSizeSubarraySumTest ex_209=new MinimumSizeSubarraySumTest();
+        //3. Longest Substring Without Repeating Characters
+        LongestSubstringWithoutRepeatingCharactersTest ex_3=new LongestSubstringWithoutRepeatingCharactersTest();
+        //30. Substring With Concatenation of All Words
+        SubstringWithConcatenationOfAllWordsTest ex_30=new SubstringWithConcatenationOfAllWordsTest();
+        //76. Minimum Window Substring
+        MinimumWindowSubstringTest ex_76=new MinimumWindowSubstringTest();
+    }
     //矩阵
     static class Matrix{ }
     //哈希表
