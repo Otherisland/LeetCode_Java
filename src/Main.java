@@ -127,7 +127,18 @@ public class Main {
         MinimumWindowSubstringTest ex_76=new MinimumWindowSubstringTest();
     }
     //矩阵
-    static class Matrix{ }
+    static class Matrix{
+        //36. Valid Sudoku
+        ValidSudokuTest ex_36 = new ValidSudokuTest();
+        //54. Sprial Matrix
+        SprialMatrixTest ex_54 = new SprialMatrixTest();
+        //48. Rotate Image
+        RotateImageTest ex_48 = new RotateImageTest();
+        //73. Set Matrix Zeroes
+        SetMatrixZeroesTest ex_73 = new SetMatrixZeroesTest();
+        //289. Game of Life
+        GameOfLifeTest ex_289 = new GameOfLifeTest();
+    }
     //哈希表
     static class HashTable{ }
     //区间
