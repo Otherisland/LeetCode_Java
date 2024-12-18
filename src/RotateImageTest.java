@@ -3,15 +3,29 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 
 public class RotateImageTest {
+    //先把二维矩阵沿对角线反转，然后反转矩阵的每一行，结果就是顺时针反转整个矩阵。
     static class Solution {
         public void rotate(int[][] matrix) {
-            int m = matrix.length;
-            int n = matrix[0].length;
-            for (int i = 0; i < m; i++) {
-                for (int j = 0; j < n; j++) {
+            int n = matrix.length;
+            // 先沿对角线反转二维矩阵
+            for (int i = 0; i < n; i++) {
+                for (int j = i; j < n; j++) {
                     int temp = matrix[i][j];
-                    matrix[i][j] = matrix[m - 1 - i][j];
-                    matrix[m - 1 - i][j] = temp;
+                    matrix[i][j] = matrix[j][i];
+                    matrix[j][i] = temp;
+                }
+            }
+            // 然后反转二维矩阵的每一行
+            for (int[] row : matrix) {
+                int i = 0, j = row.length - 1;
+                //翻转一维数组
+                while (j > i) {
+                    // swap(arr[i], arr[j]);
+                    int temp = row[i];
+                    row[i] = row[j];
+                    row[j] = temp;
+                    i++;
+                    j--;
                 }
             }
         }
